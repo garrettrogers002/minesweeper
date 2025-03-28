@@ -103,13 +103,13 @@ function flag(input, event) {;
         if (input.textContent === "F") {
             input.textContent = "";
             document.getElementById("mineCount").textContent++;
-            input.classList.remove("flagged");
+            // input.classList.remove("flagged");
         }
         else {
             input.textContent = "F";
 
             document.getElementById("mineCount").textContent--;
-            input.classList.add("flagged");
+            // input.classList.add("flagged");
         }
         return false;
     }

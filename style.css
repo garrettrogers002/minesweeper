@@ -28,6 +28,7 @@ body {
     transition: 0.2s;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 .square:hover {
     background-color: darkgray;
@@ -78,6 +79,3 @@ body {
     margin: 5px;
     display: block;
 }
-/* .flagged {
-    pointer-events: none;
-} */
