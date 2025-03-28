@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-color: darkgray;
+}
+#parentDiv {
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+#playableArea {
+    height: 350px;
+    width: 850px;
+    background-color: beige;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.square {
+    background-color: gray;
+    transition: 0.2s;
+    color: white;
+    font-weight: bold;
+}
+.square:hover {
+    background-color: darkgray;
+    transition: 0.2s;
+}
+/* #debug {
+    border: solid 1px black;
+    height: 30px;
+    width: 800px;
+    background-color: white;
+    font-size: 15px;
+    margin: 10px;
+} */
+#titleDiv {
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#minesAndReset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#mineCount {
+    margin: 5px;
+    background-color: darkgray;
+    padding: 3px;
+    color: white
+}
+#reset {
+    margin: 5px;
+}
+.pressed {
+    background-color: #3C4A4E;
+    pointer-events: none;
+    transition: 0.2s;
+    text-align: center;
+}
+.bomb {
+    background-color: red;
+    pointer-events: none;
+    transition: 0.25s;
+}
+#lose {
+    display: none;
+}
+/* .flagged {
+    pointer-events: none;
+} */
