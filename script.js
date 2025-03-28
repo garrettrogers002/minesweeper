@@ -71,6 +71,7 @@ function press(input) {
             coordsToId(coords);
             if (board[col][row] === "M") {
                 input.classList.add("bomb");
+                document.getElementById("result").textContent = "You lose :o";
                 document.getElementById("result").style.display = "block";
                 play = false;
             }
