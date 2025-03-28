@@ -45,6 +45,9 @@ body {
     /* border: 1px solid black; */
     margin-bottom: 20px;
     font-weight: bold;
+    background-color: #c4c4b0;
+    padding: 5px;
+    border-radius: 5px;
 }
 #minesAndReset {
     display: flex;
@@ -71,8 +74,9 @@ body {
     pointer-events: none;
     transition: 0.25s;
 }
-#lose {
-    display: none;
+#result {
+    margin: 5px;
+    display: block;
 }
 /* .flagged {
     pointer-events: none;

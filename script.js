@@ -18,8 +18,8 @@ let play = false;
 function checkWin() {
     if (pressedCount === 71) {
         play = false;
-        document.getElementById("lose").textContent = "You won!!!";
-        document.getElementById("lose").style.display = "block";
+        document.getElementById("result").textContent = "You won!!!";
+        document.getElementById("result").style.display = "block";
     }
     return;
 }
@@ -71,7 +71,7 @@ function press(input) {
             coordsToId(coords);
             if (board[col][row] === "M") {
                 input.classList.add("bomb");
-                document.getElementById("lose").style.display = "block";
+                document.getElementById("result").style.display = "block";
                 play = false;
             }
             else {
@@ -124,7 +124,8 @@ function resetGame() {
     })
     document.getElementById("mineCount").textContent = "10";
     // document.getElementById("debug").textContent = "";
-    document.getElementById("lose").style.display = "none";
+    document.getElementById("result").style.display = "block";
+    document.getElementById("result").textContent = 'Press "Minesweeper" to start!'
 
     board = [
         ['','','','','','','','',''],
@@ -142,6 +143,7 @@ function resetGame() {
 function startGame() {
     let mines = [];
     resetGame();
+    document.getElementById("result").style.display = "none";
     play = true;
     while (mines.length < 10) {
         let randoRow = Math.floor(Math.random() * 9); // y coordinate
